@@ -186,9 +186,9 @@ namespace LabExerciseTryCatch
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(587, 89);
+            this.textBox6.Location = new System.Drawing.Point(577, 89);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(76, 23);
+            this.textBox6.Size = new System.Drawing.Size(86, 23);
             this.textBox6.TabIndex = 17;
             // 
             // textBox7
