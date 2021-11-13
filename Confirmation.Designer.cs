@@ -180,6 +180,7 @@ namespace LabExerciseTryCatch
             this.button1.TabIndex = 14;
             this.button1.Text = "Submit";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Confirmation
             // 
@@ -203,6 +204,7 @@ namespace LabExerciseTryCatch
             this.Controls.Add(this.label1);
             this.Name = "Confirmation";
             this.Text = "Confirmation";
+            this.Load += new System.EventHandler(this.Confirmation_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

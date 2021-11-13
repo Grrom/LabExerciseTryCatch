@@ -1,17 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace LabExerciseTryCatch
 {
     class StudentInformationClass
     {
-        public int SetStudentNo = 0;
-        public int SetContactNo = 0;
+        public static long? SetStudentNo;
+        public static long? SetContactNo;
+        public static int? SetAge;
 
-        public String SetProgram = " ";
-        public String SetGender = " ";
-        public String SetBirthday = " ";
-        public String SetFullName = " ";
+        public static String SetProgram;
+        public static String SetGender;
+        public static String SetBirthday;
+        public static String SetFullName;
+
+
     }
 }
