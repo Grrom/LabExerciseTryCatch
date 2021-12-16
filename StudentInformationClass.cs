@@ -16,6 +16,23 @@ namespace LabExerciseTryCatch
         public static String SetBirthday;
         public static String SetFullName;
 
+        public static string[] allValues()
+        {
+
+            string[] lines =
+            {
+                "Student No. :"+SetStudentNo.ToString(),
+              "FullName :"+ SetFullName,
+              "Progran :"+ SetProgram,
+              "Gender :"+ SetGender ,
+              "Age :"+ SetAge.ToString(),
+              "BirthDay :"+ SetBirthday,
+              "Contact No :"+ SetContactNo.ToString(),
+            };
+
+            return lines;
+        }
+
 
     }
 }
