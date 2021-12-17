@@ -128,5 +128,10 @@ namespace LabExerciseTryCatch
                 MessageBox.Show(errors);
             }
         }
+
+        private void btnRecords_Click(object sender, EventArgs e)
+        {
+            new FrmStudentRecord().Show();
+        }
     }
 }

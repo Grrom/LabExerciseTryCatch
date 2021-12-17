@@ -49,6 +49,7 @@ namespace LabExerciseTryCatch
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.btnRecords = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -134,7 +135,7 @@ namespace LabExerciseTryCatch
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(304, 225);
+            this.button1.Location = new System.Drawing.Point(304, 234);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 9;
@@ -220,11 +221,22 @@ namespace LabExerciseTryCatch
             this.label10.TabIndex = 20;
             this.label10.Text = "Registration";
             // 
+            // btnRecords
+            // 
+            this.btnRecords.Location = new System.Drawing.Point(587, 234);
+            this.btnRecords.Name = "btnRecords";
+            this.btnRecords.Size = new System.Drawing.Size(75, 23);
+            this.btnRecords.TabIndex = 21;
+            this.btnRecords.Text = "Records";
+            this.btnRecords.UseVisualStyleBackColor = true;
+            this.btnRecords.Click += new System.EventHandler(this.btnRecords_Click);
+            // 
             // OrganizationProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(676, 269);
+            this.Controls.Add(this.btnRecords);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.textBox7);
@@ -275,6 +287,7 @@ namespace LabExerciseTryCatch
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button btnRecords;
     }
 }
 

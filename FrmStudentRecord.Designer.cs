@@ -30,10 +30,11 @@ namespace LabExerciseTryCatch
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnRegister = new System.Windows.Forms.Button();
             this.btnFind = new System.Windows.Forms.Button();
             this.btnUpload = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // label1
@@ -46,14 +47,6 @@ namespace LabExerciseTryCatch
             this.label1.TabIndex = 0;
             this.label1.Text = "View Record";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(13, 37);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(523, 173);
-            this.textBox1.TabIndex = 1;
-            // 
             // btnRegister
             // 
             this.btnRegister.Location = new System.Drawing.Point(561, 37);
@@ -62,6 +55,7 @@ namespace LabExerciseTryCatch
             this.btnRegister.TabIndex = 2;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // btnFind
             // 
@@ -71,6 +65,7 @@ namespace LabExerciseTryCatch
             this.btnFind.TabIndex = 3;
             this.btnFind.Text = "Find";
             this.btnFind.UseVisualStyleBackColor = true;
+            this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
             // 
             // btnUpload
             // 
@@ -80,16 +75,30 @@ namespace LabExerciseTryCatch
             this.btnUpload.TabIndex = 4;
             this.btnUpload.Text = "Upload";
             this.btnUpload.UseVisualStyleBackColor = true;
+            this.btnUpload.Click += new System.EventHandler(this.btnUpload_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 15;
+            this.listBox1.Location = new System.Drawing.Point(15, 37);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(529, 169);
+            this.listBox1.TabIndex = 5;
             // 
             // FrmStudentRecord
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(666, 222);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.btnUpload);
             this.Controls.Add(this.btnFind);
             this.Controls.Add(this.btnRegister);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Name = "FrmStudentRecord";
             this.Text = "FrmStudentRecord";
@@ -101,9 +110,10 @@ namespace LabExerciseTryCatch
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btnRegister;
         private System.Windows.Forms.Button btnFind;
         private System.Windows.Forms.Button btnUpload;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
